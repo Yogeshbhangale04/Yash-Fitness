@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <title>Yash Fitness</title>
+    <!-- <link rel="stylesheet" href="stylesheet.css">
+ -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+     
+        body {
+            background: url(360_F_429356296_CVQ5LkC6Pl55kUNLqLisVKgTw9vjyif1.jpg)no-repeat;
+            background-size: cover;
+            background-attachment:fixed;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            font-family: 'Baloo Bhai', cursive;
+            overflow-x: auto;
+            height: 220vh;
+            overflow-x: hidden;
+        }
+
+        /* logo */
+        .left {
+            /* border:2px solid red;     */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 10px;
+        }
+
+        .left img {
+            width: 136px;
+            filter: invert(100%);
+            height: 110px;
+
+        }
+
+        .left:hover {
+            filter: invert(20%);
+            color: gray;
+            cursor: pointer;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 120%;
+            color: rgb(183, 183, 183);
+        }
+
+        /* navigation bar */
+        .mid {
+            /* border:2px solid rgb(76, 21, 255);             */
+            display: block;
+            width: 56%;
+            margin: 2px auto;
+            margin-left: 312px;
+            margin-top: 10px;
+            position: sticky;
+        }
+
+        /* anything */
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 17px;
+            /* border:2px solid rgb(243, 255, 19);             */
+            display: inline-block;
+            /* font-size: medium; */
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: rgb(181, 181, 181);
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 24px 13px;
+        }
+
+        /* hover means if someone scroll curser on button then change colour */
+        .navbar li a:hover,
+        .navbar li a.active {
+            /* .navbar li a.active means if we present on first page then do not change color */
+            color: rgb(181, 181, 181);
+
+            text-decoration: none;
+            padding: 24px 13px;
+        }
+
+        /* main{
+border: 2px solid red;
+margin: 222px 222px;
+} */
+        .about {
+            position: absolute;
+            left: 120px;
+            top: 300px;
+        }
+
+        #fitnessCalculaotr {
+            top: 1000px;
+
+        }
+
+    
+
+        .register {
+            top: 500px;
+        }
+
+        form {
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        #reg {
+            text-decoration: none;
+            color: white;
+        }
+
+        #reg:hover {
+            color: rgb(181, 181, 181);
+        }
+
+        .header .left img:hover {
+            transform: rotate(360deg);
+        }
+        .trainer{
+            /* margin-top: 700px; */
+            background-color:black;
+        }
+        .about-our-gym{
+            /* position: s; */
+            margin-top: 650px;
+        }
+        .page-footer{
+            background-color: rgb(43, 43, 43);
+        }
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+        
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+        /*  */
+    </style> 
+</head>
+
+<body >
+    </div>
+    <header class="header">
+        <div class="container">
+
+            <div class="left">
+                <!-- <img src="img/logo4.png" alt="Logo" <a href=""></a> -->
+                <!-- <a href="Home.html"> -->
+                <img src="logo4.png" alt="Logo">
+                <!-- </a> -->
+                <div>Yash Fitness</div>
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active" target="_self">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#meet-our-trainer">Meet Our Trainers</a></li>
+                <li><a href="contact us.html" target="_blank">Contact us</a></li>
+            </ul>
+        </div>
+        
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn"><a id="reg" href="#" target="_blank"> sign up</a></button>
+            <button class="btn"><a id="reg" href="#" target="_blank">sign in</a></button>
+
+        </div>
+
+    </header>
+    <!-- partial:index.partial.html -->
+<div class="loader">
+    <div style="--i: 1"></div>
+    <div style="--i: 2"></div>
+    <div style="--i: 3"></div>
+    <div style="--i: 4"></div>
+  </div>
+<!-- partial -->
+
+    <div class="about" id="aboutus">
+        <h2>Yash Fitness</h2><br>
+        <p>"The gym is not just a physical workout, it's a mental workout too.  </p>
+            <p>You learn to push through the pain and go beyond your limits."</p> 
+        
+    </div>
+    <div class="about-our-gym">
+
+        <section id="about" class="relative py-20 bg-black text-white">
+            <div class="container mx-auto px-4">
+                <div class="items-center flex flex-wrap">
+                    <div class="w-full md:w-4/12 ml-auto mr-auto px-4 aos-init aos-animate" data-aos="fade-right">
+                        <img alt="..." class="max-w-full rounded-lg shadow-lg"
+                            src="https://images.unsplash.com/photo-1550345332-09e3ac987658?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80">
+                    </div>
+                    <div class="w-full md:w-5/12 ml-auto mr-auto px-4 aos-init aos-animate" data-aos="fade-left">
+                        <div class="md:pr-12">
+                            <small class="text-orange-500">About our gym</small>
+                            <h3 class="text-4xl uppercase font-bold">Safe Body Building</h3>
+                            <p class="mt-4 text-lg leading-relaxed">
+                                The extension comes with three pre-built pages to help you get
+                                started faster. You can change the text and images and you're
+                                good to go.
+                            </p>
+                            <ul class="list-none mt-6">
+                                <li class="py-2">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <span class="font-semibold inline-block py-3 mr-3 text-orange-500"><i
+                                                    class="fas fa-dumbbell fa-2x"></i></span>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-xl">
+                                                The latest &amp; greatest gym equipment
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <span class="font-semibold inline-block py-3 mr-3 text-orange-500"><i
+                                                    class="fas fa-hard-hat fa-2x"></i></span>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-xl">
+                                                5-inch, quality foam floor padding
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <span class="font-semibold inline-block py-3 mr-3 text-orange-500"><i
+                                                    class="fas fa-users fa-2x"></i></span>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-xl">3 professional trainers</h4>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="trainer" id="meet-our-trainer">
+        <section class="pt-20 pb-48">
+            <div class="container mx-auto px-4">
+              <div class="flex flex-wrap justify-center text-center mb-24">
+                <div class="w-full lg:w-6/12 px-4">
+                  <h2 class="text-4xl font-semibold uppercase">
+                    Meet Our Trainers
+                  </h2>
+                  <p class="text-lg leading-relaxed m-4">
+                    Our trainers are are here to dedicate the time and effort that
+                    you need to get in the best shape of your life
+                  </p>
+                </div>
+              </div>
+              <!-- Trainer Card Wrapper -->
+              <div class="flex flex-wrap">
+                <!-- Card 1 -->
+                <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4 aos-init aos-animate" data-aos="flip-right">
+                  <div class="px-6">
+                    <img alt="..." src="https://images.unsplash.com/photo-1597347343908-2937e7dcc560?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" class="shadow-lg rounded max-w-full mx-auto" style="max-width: 250px">
+                    <div class="pt-6 text-center">
+                      <h5 class="text-xl font-bold">Mr Rogers</h5>
+                      <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                        Neighborhood Watchman
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4 aos-init aos-animate" data-aos="flip-right">
+                  <div class="px-6">
+                    <img alt="..." src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="shadow-lg rounded max-w-full mx-auto" style="max-width: 250px">
+                    <div class="pt-6 text-center">
+                      <h5 class="text-xl font-bold">Strawberry Shortcake</h5>
+                      <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                        Cupcake Smasher
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4 aos-init aos-animate" data-aos="flip-right">
+                  <div class="px-6">
+                    <img alt="..." src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" class="shadow-lg rounded max-w-full mx-auto" style="max-width: 250px">
+                    <div class="pt-6 text-center">
+                      <h5 class="text-xl font-bold">Ronald McDonald</h5>
+                      <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                        Double Whoopass With Cheese
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+    <!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-10 flex-center" style="display: flex;
+          align-items: center;
+          justify-content: center;">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+                <a href="#"><i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+              
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+                <a href="#"><i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+              
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+                <a href="#"><i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+              
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+                <a href="#"><i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+              
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+                <a href="#"><i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+              
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic" >
+                <a href="#"><i class="fab fa-pinterest fa-lg white-text fa-2x"> </i></a>
+              
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2023 Copyright:
+      <a href="/"> Yash_fitness.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="gym.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
