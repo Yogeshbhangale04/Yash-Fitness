@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <style>
+        body {
+            /* The image used */
+            background-image: url("workplace-with-smartphone-laptop-black-table-top-view-copyspace-background.jpg");
+            background-repeat: no-repeat;
+            /* for full bg */
+            background-size: cover;
+        }
+
+        .title {
+            text-align: center;
+            color: #fff;
+            /* font-size: 100px; */
+        }
+
+        .title h2 {
+            font-size: 50px;
+        }
+
+        .form {
+            /* position: absolute; */
+            background-color: #cdcdcdd2;
+            /* height: 500px;
+            width: 400px; */
+            /* display: flex; */
+            justify-content: center;
+            width: 20px;
+            height: 350px;
+            margin: 50px;
+            margin-left: 1090px;
+            outline: solid 1px black;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            /* margin-left: 400px; */
+
+
+        }
+
+        .contactForm {
+            /* width: 40%; */
+            padding: 40px;
+            background: #fff;
+            margin-left: 410px;
+            margin-right: 410px;
+        }
+
+        .contactForm h2 {
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+            text-align: center;
+
+        }
+
+        .contactForm .inputBox {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+
+        .contactForm .inputBox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        .contactForm .inputBox input:focus~span,
+        .contactForm .inputBox input:valid~span,
+        .contactForm .inputBox textarea:focus~span,
+        .contactForm .inputBox textarea:valid~span {
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+
+        .contactForm .inputBox input[type="submit"] {
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+            /* text-align: center; */
+        }
+        .signin{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h2>sign in</h2>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus accusantium aut.</p> -->
+    </div>
+    <div class="contactForm">
+        <form>
+            <h2>Send Message</h2>
+            <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Email</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>password</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" name="" value="sign in">
+            </div>
+            <div class="signin">
+                <a href="#">Create an Account</a>
+            </div>
+            <!-- <label for="">Name</label><br>
+            <input type="text" required="required"><br><br>
+            <label for="Email">Email</label><br>
+            <input type="text" required="required"><br><br>
+            <label for="Mobile">Mobile No</label><br>
+            <input type="number" required="required"><br><br>
+            <label for="Age">Age</label><br>
+            <input type="number" required="required"><br><br>
+
+            <input type="submit" name="" value="Submit"><br><br>
+
+            <a href="#">create an account</a> -->
+        </form>
+    </div>
+</body>
+
+</html>
